@@ -1,0 +1,33 @@
+body{
+  font-family: 'Courier New', Courier, monospace;
+}
+.konfirmasi{
+  padding-bottom: -20px;
+}
+.judul{
+  text-align: center;
+  padding: 20px;
+  padding-top: 10px;
+}
+.Konfirmasi{
+  margin-left: auto;
+  margin-right: auto;
+}
+.sign-in{
+  padding-top: 10px;
+  text-align: center;
+  font-size: small;
+}
+
+
+.background {
+  background-image: url('/LoginB.png'); /* Ganti dengan path gambar Anda */
+    background-size: cover; /* Mengubah ukuran gambar agar menutupi seluruh area */
+    background-position: center; /* Memusatkan gambar */
+    height: 100vh; /* Mengatur tinggi div agar memenuhi seluruh tampilan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Ubah warna teks agar kontras */
+  }
+  

@@ -1,13 +1,34 @@
-import React from "react";
-import Container from "react-bootstrap/Container";
-import Navbar from "react-bootstrap/Navbar";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Awal from './components/Tampilan-awal';
+import Login from './components/Halaman-login';
+import Signin from './components/Halaman-signin';
+import Container from './components/Container';
+import Dashboard from './components/Dashboard';
+import Waitlist from './components/Wait_list';
+import './App.css';
 
-function ContainerOutsideExample() {
+function App() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Navbar.Brand href="#">Navbar</Navbar.Brand>
-    </Navbar>
+    <Router>
+      <Routes>
+        {/* Routes without Header/Footer */}
+        <Route path="/" element={<Container showHeaderFooter={false}><Awal /></Container>} />
+        <Route path="/halaman-login" element={<Container showHeaderFooter={false}><Login /></Container>} />
+        <Route path="/signin" element={<Container showHeaderFooter={false}><Signin /></Container>} />
+
+        {/* Routes with Header and Footer */}
+        <Route path="/main/*" element={
+          <Container>
+            <Routes>
+              <Route path="dashboard" element={<Dashboard />} />
+              <Route path="waitlist" element={<Waitlist />} />
+            </Routes>
+          </Container>
+        } />
+      </Routes>
+    </Router>
   );
 }
 
-export default ContainerOutsideExample;
+export default App;

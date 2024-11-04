@@ -1,0 +1,27 @@
+.Footer {
+  border: 2px solid !important; /* Ganti dengan warna yang diinginkan */
+}
+
+
+.Footer img.d2vs {
+  max-width: 150px; /* Adjust logo size */
+  margin: 0 auto;
+  display: block;
+}
+
+.sosial-media {
+  margin-bottom: 0px;
+}
+
+.sosial-media .mb-0 {
+  font-size: 1rem; /* Consistent font size */
+}
+
+.Card.Title {
+  font-weight: bold; /* Emphasize the title */
+}
+
+.Card.Footer {
+  background-color: #343a40; /* Dark background for footer */
+  color: white; /* White text color */
+}

@@ -1,0 +1,13 @@
+.Hello {
+    display: flex;
+    justify-content: center; /* Memusatkan secara horizontal */
+    align-items: center;     /* Memusatkan secara vertikal */
+    height: 100vh;           /* Menggunakan 100% tinggi viewport */
+}
+
+
+.L {
+    display: block; /* Mengubah gambar menjadi elemen block */
+    margin: 0 auto; 
+    width: 300px;
+    }
